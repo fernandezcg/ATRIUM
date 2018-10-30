@@ -13,11 +13,13 @@
 <body>
   <header>
     <h1 id="inicio">Título principal</h1>
+    <img src="./assets/AJ_Digital_Camera.svg" alt="imagen svg">
     <nav>
       <ol>
         <li><a href="#item1">Item 1</a></li>
         <li><a href="#item2">Item 2</a></li>
         <li><a href="#item3">Item 3</a></li>
+        <li><a href="#form">Formulario</a></li>
       </ol>
     </nav>
   </header>
@@ -25,6 +27,7 @@
 
     <section id="item1">
       <h2>Item 1</h2>
+      <embed src="./assets/AJ_Digital_Camera.svg">
       <article>
         <h3>Articulo 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit doloremque sapiente
@@ -92,6 +95,50 @@
         reiciendis magni non id neque voluptatum eos atque veniam velit quam! Reiciendis id rerum maiores
         laboriosam optio officiis.</p>
       <a href="#inicio">volver</a>
+    </section>
+    <section id="form">
+      <h2>Formulario</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, temporibus. Repellendus excepturi provident dolor consequatur, consectetur libero magnam totam eligendi autem vero, dolore quis, adipisci veritatis sapiente nostrum eaque facilis.</p>
+      <form id="form1" action="">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div><input type="text" name="name" id="name" placeholder="nombre" required></div>
+          <div><input type="password" name="pwd" id="pwd" placeholder="contraseña" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></div>
+          <div><input type="email" name="email" id="email" placeholder="correo" required></div>
+        </fieldset>
+        <fieldset>
+          <legend>Otros datos</legend>
+          <div>
+            <input type="checkbox" name="isOk" id="isOk">
+            <label for="isOk">rgpd</label>
+        </div>
+        <div>
+          <legend>Turnos</legend>
+          <input type="radio" name="turno" id="tm" value="tm">
+          <label for="tm">mañana</label>
+          <input type="radio" name="turno" id="tt" value="tt">
+          <label for="tt">tarde</label>
+          <input type="radio" name="turno" id="tn" value="tn">
+          <label for="tn">noche</label>
+        </div>
+        <div>
+          <label for="destino">Destino</label>
+          <select name="destino" id="destino">
+            <option value="M">Madrid</option>
+            <option value="A">Alicante</option>
+            <option value="B">Barcelona</option>
+            <option value="CA">Cadiz</option>
+            <option value="SE">Sevilla</option>
+            <option value="MA">Málaga</option>
+          </select>
+
+        </div>
+          
+        </fieldset>
+
+        <button>Enviar</button>
+        <button type="button">Enviar</button>
+      </form>
     </section>
   </main>
 
