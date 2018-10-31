@@ -1,0 +1,42 @@
+/* 0 0 0 2*/
+section p {
+    color: brown
+}
+
+/* 0 0 0 2*/
+section>p {
+    color: #0000ff
+}
+
+section~p {
+    color: aquamarine
+}
+
+/* 0 0 0 2*/
+section+p {
+    color: darkblue
+}
+
+/* 0 0 0 3*/
+section+p::first-letter {
+    font-size: 3rem
+}
+
+/* 0 0 0 3*/
+section+p::first-line {
+    font-size: 2rem
+}
+
+address::before {
+    content: 'INICIO';
+}
+
+address::after {
+    content: 'FIN';
+}
+
+/* 0 0 1 1*/
+address:hover {
+    color: #0000ff
+}
+
