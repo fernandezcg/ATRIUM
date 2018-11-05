@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    background-color: coral;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.container {
+    margin-top: 2rem;
+    height: 70vh;
+    border: 1px solid;
+    display: flex;
+
+    /* flex-direction deterina el eje principal */
+    /* flex-direction: column; */
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    /* distribucion en el eje principal */
+    align-items: flex-start;
+    /* distribucion en el eje secundario */
+    justify-content: space-between;
+    /* distribucion entre varias filas */
+    align-content: center;
+
+}
+.text-container {
+    margin-top: 2rem;
+    display: flex;
+    /* flex-direction: column; */
+
+}
+.numbers p {
+    font-size: 3rem;
+}
+
+p.big {
+    font-size: 5rem;
+}
