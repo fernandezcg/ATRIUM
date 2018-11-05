@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+    min-height: 200vh;
+    
+}
+
+.relativo {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+
+}
+
+.absoluto {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+header {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    z-index: 1;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    z-index: 1;
+}
+
+header, footer {
+    background-color: blue;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ol {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem;
+
+}
