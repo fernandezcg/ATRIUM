@@ -1,169 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <title>hola mundo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/app.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <base href="/">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/style-grid.css">
+    <script src="./js/app.js" type="module"></script> 
 </head>
 
 <body>
-  <header>
-    <h1 id="inicio">Título principal</h1>
-    <img src="./assets/AJ_Digital_Camera.svg" alt="imagen svg">
-    <nav>
-      <ol>
-        <li><a href="#item1">Item 1</a></li>
-        <li><a href="#item2">Item 2</a></li>
-        <li><a href="#item3">Item 3</a></li>
-        <li><a href="#form">Formulario</a></li>
-      </ol>
-    </nav>
-  </header>
-  <main>
+    <div class="container">
+        <header>
+                <h1>Título principal <i id="btnInicial" class="fas fa-address-book boton"></i></h1>
+                <img src="./assets/AJ_Digital_Camera.svg" alt="logo de una camara">
+                <nav id="inicio">
+                    <ol>
+                        <li><a href="#item1">Item 1</a></li>
+                        <li><a href="#item2">Item 2</a></li>
+                        <li><a href="#item3">Item 3</a></li>
+                        <li><a href="#form">Formulario</a></li>
+                        <li><a href="#news">Novedades HTML 5.x</a></li>
+                        <li><a href="https://www.google.es">Google</a></li>
+                    </ol>
+                    <div class="icon-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+        </header>
+        <main>
+                <section id="item1">
+                    <h2>Item 1</h2>
+                    <embed src="./assets/AJ_Digital_Camera.svg">
+                    <article>
+                        <h3>Article 1</h3>
+                        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe debitis sint sequi officia odio, quod nam, expedita porro amet illum ab exercitationem repellat, voluptatibus est. Quisquam dolores nobis amet et.</p>
+                        <blockquote cite="de donde viene" title="de donde viene">Animi dolore saepe autem voluptates eius minima id. Aperiam, itaque a? Accusantium, quaerat incidunt. Dicta numquam velit, iusto sint explicabo eligendi veniam veritatis quia praesentium odio ducimus voluptates facere exercitationem.</blockquote>
+                        <figure>
+                            <img src="https://via.placeholder.com/150" alt="imagen simulada">
+                            <figcaption>Título de la imagen</figcaption>
+                        </figure>
+                        
+                        <p class="ultimo">Illo, tenetur! Officiis qui non fugit nisi omnis eos voluptatum incidunt consequuntur vitae error nesciunt voluptas odit voluptate laboriosam aliquid iusto, hic, vero sint quas veniam esse, doloribus impedit! Odit.</p>       </article>
+                    <article>
+                        <h3>Article 2</h3>
+                        <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Aliquid nemo similique facere <em>reprehenderit</em> omnis sed nulla molestias quae beatae? Ipsam exercitationem officiis est pariatur enim aut perspiciatis officia, porro nihil?</p>
+                        <p>Alias dicta aut, aliquid  eum natus nesciunt. Fugiat dolorum, tenetur quas fugit incidunt commodi eveniet maiores provident, deserunt molestias id veniam. At maxime, quia odit labore quidem ea vitae aut!</p>
+                        <p>Explicabo fuga dolor laborum alias in enim perferendis temporibus consequatur nostrum eveniet. Voluptatibus impedit nulla soluta pariatur at ipsa sint similique molestias eveniet quis! Consectetur repellat illo ab sit sequi!</p>
+                        <p>Tempore, inventore debitis? Fugit architecto molestias distinctio blanditiis, praesentium pariatur corporis laudantium autem expedita vero aliquid excepturi possimus incidunt tempore labore, doloremque, tenetur aperiam quidem? Rem expedita necessitatibus excepturi aliquid.</p>
+                        <p>Eum velit earum beatae, repellendus dolorem deleniti odio, nobis minima adipisci voluptate nulla quo corporis maxime! Unde sunt distinctio reprehenderit cum obcaecati velit. Esse porro velit sunt fugit quis veniam.</p>
+                    </article>
+                    <a href="#inicio">Inicio</a>
+                </section>
+                <section id="item2">
+                    <h2>Item 2</h2>
+                    <article>
+                        <h3>Article 1</h3>
+                        <video 
+                            controls
+                            width="400px"
+                            >
+                            <source src="./assets/Ghost_in_the_Shell_Opening.webm"
+                                type='video/webm'> 
+                            <source src="./assets/Ghost_in_the_Shell_Opening.mp4" 
+                                type="video/mp4">
+                        </video>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla eaque veniam dolorum voluptatem,
+                            soluta ducimus minus id facere rerum repellendus distinctio similique explicabo et qui enim non magnam nostrum!</p>
+                        <p>Quos accusantium quo voluptates harum distinctio corrupti, ipsa iste possimus, doloremque minus molestias odio,
+                            ullam cupiditate tenetur praesentium ipsum reprehenderit deleniti sint odit illum rem quasi eius dolor
+                            voluptate. Odio!</p>
+                        <p>Quo eveniet qui voluptas corporis reprehenderit neque ut harum ab a repudiandae, voluptatibus ea soluta velit
+                            facere minima ducimus, adipisci culpa dicta aliquid quae, quidem nisi? Iste soluta ipsam a.</p>
+                    </article>
+                    <a href="#inicio">Inicio</a>
+                </section>
+                <section id="item3">
+                    <h2>Item 3</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquid laudantium architecto perferendis
+                        quos dolores cum? Odio delectus dolores amet rerum voluptatem. Id dolorem rerum, doloremque omnis consectetur
+                        magni! Magnam?</p>
+                    <p>Voluptatem ex soluta, vel facilis error eum animi quibusdam repellat blanditiis culpa nulla commodi magnam minus
+                        libero perspiciatis consequuntur maxime quis excepturi, voluptate et, natus quo voluptatibus sunt. Mollitia,
+                        explicabo.</p>
+                        <a href="#inicio">Inicio</a>
+                </section>
+                <section id="form">
+                    <h2>Ejemplo de formulario</h2>
+                    <form action="" method="GET" id="form1">
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <div>
+                                <input type="text" name="name" id="name" placeholder="Nombre de" required minlength="2" maxlength="10">
+                            </div>
+                            <div>
+                                <input type="password" name="passw" id="passw" 
+                                placeholder="Contraseña" 
+                                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                                title="Incluir May, min, num y spcial char">
+                                <label>Incluir May, min, num y spcial char</label>
+                            </div>
+                            <div>
+                                <input type="email" name="correo" id="correo" placeholder="Correo" required>
+                            </div>
+                        <div>
+                            <textarea name="info" id="info" cols="30" rows="10" placeholder="Información extra"></textarea>
+                        </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Otros datos</legend>
+                            <div>
+                                <input type="checkbox" name="isOk" id="isOk">
+                                <label for="isOk">He leido los datos ...</label>
+                            </div>
+                            <div>
+                                <legend>Turnos</legend>
+                                <input type="radio" name="turno" id="tm" value="tm">
+                                <label for="tm">Mañana</label>
+                                <input type="radio" name="turno" id="tt" value="tt">
+                                <label for="tt">Tarde</label>
+                                <input type="radio" name="turno" id="tn" value="tn">
+                                <label for="tn">Noche</label>
+                            </div>
+                            <div>
+                                <label for="destino"></label>
+                                <select name="destino" id="destino">
+                                    <option value="Md">Madrid</option>
+                                    <option value="Sv">Sevilla</option>
+                                    <option value="Vl">Valencia</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Aun más, menos habituales</legend>
+                            <input type="file" name="" id="f">
+                            <input type="search" name="" id="b" placeholder="Buscar">
+                            <input type="number" name="num" id="num" min="4" max="10">
+                            <input type="range" name="rango" id="rango" min="1" max="5">
+                            <input type="date" name="fecha" id="fecha">
+                            <input type="color" name="color" id="color">
+                        </fieldset>
 
-    <section id="item1">
-      <h2>Item 1</h2>
-      <embed src="./assets/AJ_Digital_Camera.svg">
-      <article>
-        <h3>Articulo 1</h3>
-        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit doloremque sapiente
-          dolorum atque rem. Dolore impedit ab labore tempore odit amet quaerat saepe nesciunt eos, ipsum cum
-          ut repudiandae.</p>
-        <p class="ultimo">Provident, possimus? Rerum perferendis quis optio maiores suscipit unde velit deleniti nobis
-          laborum, officia obcaecati sunt quisquam hic? Repellendus ut ducimus minima odio illo reiciendis
-          eum, quos perferendis mollitia officiis?</p>
-        <blockquote cite="de donde viene" title="de donde viene">Nobis esse perspiciatis voluptate ipsa, ab, eveniet
-          ipsam ipsum sed dignissimos consectetur vitae
-          architecto inventore illo ratione officiis! Doloribus ex iure omnis officiis beatae aperiam
-          architecto corrupti deserunt repellendus molestias.</blockquote>
-        <p title="de p">Incidunt quam ducimus, natus earum odit distinctio minima rem labore porro illum consequuntur
-          eligendi optio iste, magni ipsa unde odio inventore, recusandae aliquid aut modi quod. Ipsa ducimus
-          deserunt delectus.</p>
-        <p kk="3">Laborum corrupti omnis veniam excepturi earum, adipisci necessitatibus molestiae delectus sit cum
-          magnam quod! Sit totam maiores sapiente modi, consequuntur culpa obcaecati nemo odio iusto vero
-          natus accusantium nulla. At?</p>
-        <figure>
-          <img src="https://via.placeholder.com/150" alt="imagen 150">
-          <figcaption>título de la imagen</figcaption>
-        </figure>
-      </article>
-      <article>
-        <h3>Articulo 2</h3>
-        <video 
-            controls
-            width="400px">
-            <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
-            <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
-        </video>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Error asperiores voluptate
-          repellat, ratione similique provident dolorem tempore iste odio atque corrupti illo inventore totam
-          voluptatem nam in eius!</p>
-        <p>Voluptatum nemo expedita, asperiores mollitia delectus iste consequuntur, quam perspiciatis beatae
-          rerum doloremque alias laboriosam itaque. Placeat perferendis sapiente rerum itaque architecto
-          voluptas fuga beatae neque, unde vitae deleniti nam?</p>
-        <p>Tempora autem doloremque quos expedita perferendis! Est quis tenetur similique, sunt quidem ea
-          autem, iste cupiditate ad molestias excepturi tempore pariatur nesciunt aliquid temporibus in optio
-          ex fuga neque. Saepe.</p>
-        <p>Ipsam, nam deleniti, eaque repudiandae excepturi pariatur minima quae vel recusandae maiores, fuga
-          temporibus aliquid? Facilis repudiandae dicta, minus, incidunt amet dolores labore, possimus maxime
-          nihil quidem illum tempore optio!</p>
-        <p>Corrupti, repellendus! Consequuntur id beatae atque illo cum. Fuga eum non quisquam accusamus
-          expedita similique nesciunt beatae quidem dolore quo odit, recusandae optio? Praesentium beatae
-          iste voluptates, eius natus nesciunt.</p>
-      </article>
-      <a href="#inicio">volver</a>
-    </section>
-    <section id="item2">
-      <h2>Item 2</h2>
-      <article>
-        <h3>Articulo 3</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur incidunt sunt. Molestias facilis sed
-          maxime sequi dolor. Illo reiciendis eveniet nisi impedit molestias fugit nobis iure quis non illum?</p>
-      </article>
-      <a href="#inicio">volver</a>
-    </section>
-    <section id="item3">
-      <h2>Item 3</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti magnam quidem illum totam magni
-        quisquam nostrum eveniet sapiente beatae nobis facere, ea corporis, sint numquam dolorum deserunt cum?
-        Amet, numquam.</p>
-      <p>Delectus perspiciatis odit, temporibus unde ut officiis, aperiam tempora cupiditate dolorum vitae
-        reiciendis magni non id neque voluptatum eos atque veniam velit quam! Reiciendis id rerum maiores
-        laboriosam optio officiis.</p>
-      <a href="#inicio">volver</a>
-    </section>
-    <section id="form">
-      <h2>Formulario</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, temporibus. Repellendus excepturi provident dolor consequatur, consectetur libero magnam totam eligendi autem vero, dolore quis, adipisci veritatis sapiente nostrum eaque facilis.</p>
-      <form id="form1" action="">
-        <fieldset>
-          <legend>Datos Personales</legend>
-          <div><input type="text" name="name" id="name" placeholder="nombre" required></div>
-          <div><input type="password" name="pwd" id="pwd" placeholder="contraseña" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></div>
-          <div><input type="email" name="email" id="email" placeholder="correo" required></div>
-        </fieldset>
-        <fieldset>
-          <legend>Otros datos</legend>
-          <div>
-            <input type="checkbox" name="isOk" id="isOk">
-            <label for="isOk">rgpd</label>
-        </div>
-        <div>
-          <legend>Turnos</legend>
-          <input type="radio" name="turno" id="tm" value="tm">
-          <label for="tm">mañana</label>
-          <input type="radio" name="turno" id="tt" value="tt">
-          <label for="tt">tarde</label>
-          <input type="radio" name="turno" id="tn" value="tn">
-          <label for="tn">noche</label>
-        </div>
-        <div>
-          <label for="destino">Destino</label>
-          <select name="destino" id="destino">
-            <option value="M">Madrid</option>
-            <option value="A">Alicante</option>
-            <option value="B">Barcelona</option>
-            <option value="CA">Cadiz</option>
-            <option value="SE">Sevilla</option>
-            <option value="MA">Málaga</option>
-          </select>
+                        <!-- <input type="submit" value="Enviar"> -->
+                        <button type="submit">Enviar</button>
+                        <button type="button">Enviar sin submit</button>
+                    </form>
+                </section>
+                <section id="news">
+                    <details>
+                        <summary>El titulo</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem consequuntur voluptatibus labore dolorem magni mollitia distinctio repellendus saepe. Vero accusamus facere ipsa ducimus cumque, quam totam dignissimos nisi! Alias, sit!</p>
+                        <p>Eligendi dolorum aspernatur amet hic maiores saepe asperiores deserunt! Asperiores vitae quo atque, id iure quos tempora animi aperiam unde enim sequi praesentium, eaque commodi recusandae, possimus iste laudantium neque.</p>
+                        <p>Unde odit porro nemo perferendis harum magni aliquid soluta dolor, cum voluptas quae quia nostrum accusantium recusandae neque, eveniet molestias corporis dolorum nisi labore. Hic inventore laudantium at repellat nostrum.</p>
+                    </details>
+                </section>
+                <button type="button" id="mas-info">Más info</button>
+                <dialog id="my-modal">
+                    <p>It seems that we won't see native dialogs after all.</p>
+                    <button id="ok-btn">OK :(</button>
+                </dialog>
+                <template id="my-template">
+                    <p>Esto se hará visible desde código</p>
+                </template>
 
-        </div>
-          
-        </fieldset>
-
-        <button>Enviar</button>
-        <button type="button">Enviar</button>
-      </form>
-    </section>
-    <section>
-        <h2>Detalles</h2>
-        <details>
-          <summary>titulo</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore nulla, deserunt neque veritatis iure corrupti alias placeat quis. Delectus assumenda optio cupiditate rem magni, debitis dignissimos maiores culpa consectetur!
-        </details>
-    </section>
-  </main>
-
-  <aside>
-    <h2>Aside 1</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sZK1Ax-qcUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>Esto es de <time datetime="2018-10-28" pubdate>ayer</time>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eius quis ex numquam maxime sed? Recusandae
-      culpa placeat nobis libero nihil ex, asperiores, laboriosam, blanditiis itaque molestias aliquam quaerat
-      debitis?</p>
-    <p>Labore quos iste nostrum ipsa inventore similique at molestias nemo provident, sunt eum perferendis aut
-      corrupti et. Mollitia, molestias laboriosam. Earum et minima temporibus explicabo corporis aspernatur
-      veniam repudiandae assumenda?</p>
-      <iframe src="https://www.agenciatributaria.es/" frameborder="0"></iframe>
-  </aside>
-  <footer>
-    <address></address>
-  </footer>
+        </main>
+        <aside>
+            <h2>Aside 1</h2>
+            <div class="iframe-container">
+                <!--  width="560" height="315" -->
+                <iframe src="https://www.youtube.com/embed/6e2iI1XxumE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
+            
+            <p>Esto es de <time datetime="2018-10-28" pubdate>ayer</time>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ratione ea fuga, eaque obcaecati laudantium? Iste ratione est at. Blanditiis ducimus eum dolorum quaerat possimus repellendus porro molestias perferendis ad!</p>
+            <p>Sunt porro blanditiis quo totam eveniet quas, laudantium non in ducimus adipisci mollitia sit culpa quae architecto nemo tempora natus. Doloremque suscipit et non vero incidunt id a porro aliquid.</p>
+            <iframe class="full" src="https://www.agenciatributaria.es/" frameborder="1"></iframe>
+        </aside>
+        <footer>
+            <address></address>
+        </footer> 
+    </div>
 </body>
-
 </html>

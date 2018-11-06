@@ -1,0 +1,53 @@
+*, *::after, *::before {
+    box-sizing: border-box
+}
+
+iframe { width: 100%;}
+
+h1 {
+    color: brown;
+}
+
+/* 0 0 1 0 */
+p {
+    color: blue;
+    font-size: 1.4rem;
+}
+/* 0 1 0 1 */
+p#p1 {
+    color: cornflowerblue;
+}
+/* 0 1 0 0 */
+#p1 {
+    color: purple;
+}
+
+/* 0 0 1 1 */
+p.ultimo {
+    color: darkgoldenrod
+}
+
+/* 0 0 1 0 */
+.ultimo {
+    color: antiquewhite;
+}
+
+/* 0 0 1 0 */
+[title^="de"] {
+    font-size: 5rem;
+}
+
+/* 0 0 1 0 */
+[kk] {
+    font-size: 5rem;
+}
+
+.container {
+    display: flex;
+
+}
+
+header {
+    width: 100%;
+    
+}

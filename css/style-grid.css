@@ -12,8 +12,16 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas:
+	"header  	header"
+    "main       sidebar"
+    "main       sidebar"
+	"footer 	footer";
+
+
 }
 
 /* html, body, h1, h2, h3, h4, p, blockquote,
@@ -32,31 +40,24 @@ q:before, q:after {
 	content: none;
 }
 
-header, footer {
-    /* 
-    width: 100%;
-    flex: 0 1 auto;
-    */
-    flex: 0 1 100%;
-
+header {
+    grid-area: header;
+    margin-top: 4rem;
 }
+
+footer {
+    grid-area: footer;
+}
+
 main {
-    /* 
-    width: 100%;
-    flex: 0 1 auto;
-    */
-    width: 10%;
-    flex: 2 1 10%;
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
 
 }
-aside {
-    /* 
-    width: 100%;
-    flex: 0 1 auto;
-    */
-    width: 10%;
-    flex: 1 1 10%;
-}
+
 h1 {
     font-family: 'Spicy Rice', 'Otra fuente', cursive;
     font-size: 3rem;
@@ -64,6 +65,12 @@ h1 {
 }
 .boton {
     cursor: pointer;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
 
 nav ol, nav ul {
@@ -89,8 +96,26 @@ nav {
     box-shadow: 3px 3px 3px 3px silver;
 }
 
+nav .icon-menu {
+    display: none;
+}
+
 iframe.full {
     width: 100%;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 h1, h2 {
@@ -128,6 +153,42 @@ p {
 }
 
 
+@media screen and (max-width: 767px) {
+
+    .container {
+        grid-template-areas:
+            "header  	header"
+            "main       main"
+            "sidebar    sidebar"
+            "footer 	footer";
+    }
+
+    nav {
+        width: 35%; 
+    }
+
+    nav ol, nav ul {
+        flex-direction: column;
+    }
+}
 
 
+@media screen and (max-width: 610px) {
+
+
+    nav {
+        width: 20%;
+        text-align: center;
+    }
+    nav ol {
+        display : none;
+    }
+
+    nav .icon-menu {
+        display: initial;
+        font-size: 3rem;
+        padding: 1rem;
+
+    }
+}
 
